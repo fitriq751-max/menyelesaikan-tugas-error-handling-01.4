@@ -41,10 +41,8 @@ class Truck(Vehicle):
         except ValueError:
             print(f"ERROR: '{weight}' bukan angka! Masukkan berat dalam angka.")
 
-# --- Bagian di bawah ini harus sejajar di pinggir kiri (tidak menjorok) ---
-
 def main():
-    print("--- Pengujian Sistem Kendaraan ---")
+    print("Pengujian Sistem Kendaraan")
     
     # 1. Tes Mobil
     my_car = Car("Toyota", "Corolla", 4)
@@ -52,11 +50,11 @@ def main():
     my_car.honk()
 
     # 2. Tes Truk Interaktif
-    print("\n--- Pengujian Truk Interaktif ---")
+    print("Pengujian Truk Interaktif")
     my_truck = Truck("Ford", "F-150", 1000)
     my_truck.drive()
     
-    print("\nSilakan masukkan angka untuk menguji Error Handling:")
+    print("Silakan masukkan angka untuk menguji Error Handling:")
     berat_input = input("Masukkan berat muatan yang ingin dimuat ke truk (kg): ") 
     
     # Memproses input melalui metode load
