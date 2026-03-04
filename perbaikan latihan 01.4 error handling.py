@@ -33,7 +33,7 @@ class Truck(Vehicle):
             weight = float(weight)
             # Penanganan Error 3: Cek kapasitas (Overload)
             if weight > self.load_capacity:
-                print(f"ERROR: Muatan ({weight}kg) MELEBIHI kapasitas ({self.load_capacity}kg)!")
+                print(f"ERROR: Muatan {weight}kg MELEBIHI kapasitas {self.load_capacity}kg!")
             elif weight < 0:
                 print("ERROR: Berat muatan tidak bisa negatif!")
             else:
@@ -62,3 +62,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
